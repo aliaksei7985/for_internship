@@ -33,4 +33,5 @@ CREATE TABLE if not exists "orders" (
   "job_id" smallint REFERENCES "jobs"(id),
   "car_id" smallint REFERENCES "cars"(id),
   "client_id" smallint REFERENCES "clients"(id)
+  "order_date" timestamp
 );
